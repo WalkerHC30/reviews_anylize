@@ -20,3 +20,14 @@ for d in data:
 		new.append(d)
 print('一共有', len(new), '筆長度小於100')
 print(new[0])
+
+good = []
+damn = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+	elif 'damn' in d:
+		damn.append(d)
+print('有good的留言共', len(good), '筆')
+print('有damn的留言共', len(damn), '筆')
+print(damn[2])
